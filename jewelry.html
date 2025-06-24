@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Handmade Jewelry</title>
-    <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Megan Hauser">
+  <title>Jewelry</title>
 
-<style>
+  <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
     body {background-color:#ccffff; margin: 50px;    
     }
-    body {font-family: Georgia, 'Times New Roman', Times, serif;}
+    body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
-    * {box-sizing: border-box;
+    * {
+  box-sizing: border-box;
+}
+
+/* Style Navigation Bar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d5f7ae;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: aqua;
 }
 
 /* Style the header */
@@ -23,75 +53,51 @@
   font-size: 25px;
 }
 
-  /* Style Navbar */
+</style>
 
-
-.navbar .content {
-  width: 100%;
-  background-color: #d5f7ae;
- 
-  width: 100%;
-}
-
-.nav-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-.nav-links a {
-  color: black;
-  text-decoration: none;
-  padding: 0.5em;
-  
-  display: block;
-}
-
-/* horizontal on wider screens */
-@media (min-width: 600px) {
-  .nav-links {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav-links li {
-    margin-bottom: 0;
-  }
-}
 
 
 <body>
 
+      <script src="node_modules/boostrap/dist/js/bootstrap.bundle.js"></script>
 
-            /* A horizontal navbar that becomes vertical on small screens */
- <div>
+    /* A horizontal navbar that becomes vertical on small screens */
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
 
-  <nav class="navbar">
 
-  <!-- Links -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <ul class="nav-links">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="hotyoga.html">Hot Yoga Resources</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="jewelry.html">Handmade Jewelry and Spiders</a>
-    </li>
-  </ul>
-
-  </nav> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotyoga.html">Hot Yoga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jewelry.html">Jewelry & Spiders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </div>
+</nav>
+    <h1>Jewelry & Spiders</h1>
+
+
+            
 </body>
 </html>

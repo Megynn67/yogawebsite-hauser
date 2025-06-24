@@ -1,18 +1,58 @@
+
+<!--Create a new website using html and bootstrap. Include: -->
+<!-- 2 pages -->
+<!-- Boostrap navbar, table, form-->
+<!-- Grid throughout for formatting elements-->
+<!-- Elements stack vertically when the window is small-->
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Yoga Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Megan Hauser">
+  <title>Yoga Website</title>
+
+  
+  <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
+  <link rel="stylesheet" href="styles.css">
+
     
-    <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
 
 <style>
     body {background-color:#ccffff; margin: 50px;    
     }
-    body {font-family: Georgia, 'Times New Roman', Times, serif;}
+    body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
     * {
   box-sizing: border-box;
+}
+
+/* Style Navigation Bar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d5f7ae;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: aqua;
 }
 
 /* Style the header */
@@ -59,57 +99,12 @@
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: d5f7ae;
+  background-color: rgb(204, 255, 156);
   padding: 10px;
   text-align: center;
 }
 
-/* Style Navbar */
 
-
-.navbar .content {
-  width: 100%;
-  background-color: #d5f7ae;
- 
-  width: 100%;
-}
-
-.nav-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-
-
-.nav-links a {
-  color: black;
-  text-decoration: none;
-  padding: 0.5em;
-  
-  display: block;
-}
-
-/* horizontal on wider screens */
-@media (min-width: 600px) {
-  .nav-links {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav-links li {
-    margin-bottom: 0;
-  }
-}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
@@ -126,7 +121,41 @@
 </style>
 </head>
 <body>
-   
+   <script src="node_modules/boostrap/dist/js/bootstrap.bundle.js"></script>
+
+           <!-- A horizontal navbar that becomes vertical on small screens -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navigation</a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" target="blank">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotyoga.html" target="blank">Hot Yoga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jewelry.html" target="blank">Jewelry & Spiders</a>
+        </li>
+        
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     
 <div class="grid-container">
 
@@ -167,27 +196,10 @@
   <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_grid">This template is available on the W3 Schools website.</a> 
     </div>
 
-        <!-- A horizontal navbar that becomes vertical on small screens -->
- <div class="container">
 
-  <nav class="navbar">
 
-  <!-- Links -->
 
-  <ul class="nav-links">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html" target="_blank">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="hotyoga.html" target="_blank">Hot Yoga Resources</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="jewelry.html" target="_blank">Handmade Jewelry and Spiders</a>
-    </li>
-  </ul>
-
-  </nav> 
-  </div>
+ 
 
 </div>
 

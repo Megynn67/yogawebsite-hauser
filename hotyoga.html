@@ -1,24 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <title>I love hot yoga!</title>
-    <link rel="stylesheet" href="href=node_modules/boostrap/dist/css/bootstrap.css">
-  
-    
- 
-</head>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Megan Hauser">
+  <title>Hot Yoga</title>
+
+  <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
  body {background-color:#ccffff; margin: 50px;    
     }
     body {font-family:Verdana, Geneva, Tahoma, sans-serif;}
 
+   
+    body {background-color:#ccffff; margin: 50px;    
+    }
+    body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
+    * {
+  box-sizing: border-box;
+}
+
+/* Style Navigation Bar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d5f7ae;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: aqua;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #d5f7ae;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+tr:hover {background-color: rgb(255, 157, 157);}
 
 </style>
+
+
+
+  </head>
+
 <body>
+
+     <script src="node_modules/boostrap/dist/js/bootstrap.bundle.js"></script>
+
+           <!-- A horizontal navbar that becomes vertical on small screens -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navigation</a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" target="blank">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotyoga.html" target="blank">Hot Yoga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jewelry.html" target="blank">Jewelry & Spiders</a>
+        </li>
+        
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
     <div class="text-center 
                 py-3 mb-4 
                 border-bottom">
