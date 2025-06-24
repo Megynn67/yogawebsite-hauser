@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Handmade Jewelry</title>
+    <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
+</head>
+
+<style>
+    body {background-color:#ccffff; margin: 50px;    
+    }
+    body {font-family: Georgia, 'Times New Roman', Times, serif;}
+
+    * {box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #d5f7ae;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+  /* Style Navbar */
+
+
+.navbar .content {
+  width: 100%;
+  background-color: #d5f7ae;
+ 
+  width: 100%;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5em;
+  
+  display: block;
+}
+
+/* horizontal on wider screens */
+@media (min-width: 600px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links li {
+    margin-bottom: 0;
+  }
+}
+
+
+<body>
+
+
+            /* A horizontal navbar that becomes vertical on small screens */
+ <div>
+
+  <nav class="navbar">
+
+  <!-- Links -->
+
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="hotyoga.html">Hot Yoga Resources</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="jewelry.html">Handmade Jewelry and Spiders</a>
+    </li>
+  </ul>
+
+  </nav> 
+  </div>
+</body>
+</html>
