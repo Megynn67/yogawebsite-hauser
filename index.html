@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Yoga Website</title>
+    <link rel="stylesheet" href="node_modules/boostrap/dist/css/boostrap.css">
+
+<style>
+    body {background-color:#ccffff; margin: 50px;    
+    }
+    body {font-family: Georgia, 'Times New Roman', Times, serif;}
+
+    * {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #d5f7ae;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+</style>
+</head>
+<body>
+   
+    
+    <div class="grid-container">
+  <div class="header">
+    <h1>Megan's Yoga Website</h1>
+    </div>
+
+<div class="left" style="background-color:#f4a483;">
+    <h2>Why Yoga?</h2>
+    <p>I've been practicing and studying yoga on and off since around 2000, but in the past 10 years have become more serious about it. Initially I became interested in Yoga for the physical challenge - enjoying the focus on strength and flexibility. I also found Yoga's meditative aspect very healing and supportive during difficult times.</p>
+    <img src="images/lotus.jpg" alt="Lotus Flower" width="100%">
+    </div>
+
+    <div class="middle" style="background-color:#fcafaf;">
+    <h2>Hot Yoga</h2>
+
+    <p>While living in Albuquerque I fell in love with hot yoga - specifically, hot Vinyasa. The intensity of constantly moving in a 100 degree room at 60% humidity sounded awful at first. However, at the end of an hour long class I was exhausted and calm. My body was relaxed and my brain was quiet. I volunteered at Hot Yoga Downtown in Albuquerque in exchange for free yoga classes. An unexpected bonus has been the long-lasting community connections I still have today.</p>
+    <img src="images/mala-white.jpg" alt="Prayer Mala" width="100%">
+    </div>
+<div class="right" style="background-color:#ffc8d5;">
+    <h2>Teacher Training</h2>
+        
+    <p>In 2018 I completed a 200 hour Yoga Teacher Training in Fort Collins at one of my favorite yoga studios, Yoga Pod Fort Collins. There, most of the classes are done in a heated room with high humidity. The styles I learned included Vinyasa and Hatha Yoga, with some very basic information about restorative and accessible styles. I have not ever, nor will I ever teach goat yoga, though I have attended a goat-yoga class.</p>
+
+    <img src="images/Megan in Goat Yoga.jpg" alt="Goat Yoga" width="100%">
+    </div>
+
+    <div class="footer">
+  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_grid">This template is available on the W3 Schools website.</a> 
+  </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
